@@ -75,12 +75,12 @@
                         <th scope="row"><span class="badge rounded-pill text-bg-primary">#</span></th>
                         <td><?php echo $item->title ?></td>
                         <td>
-                            <form method="post" action="modifier.php">
+                            <form method="post" >
                                 <input type="hidden" value="<?php echo $item->id ?>" name="id">
-                                <button class="btn btn-primary rounded-circle" type="submit" name="modifier">
+                                <button class="button  rounded-circle" type="submit" name="modifier" formaction="modifier.php">
                                     <i class="fa-solid fa-pen"></i>
                                 </button>
-                                <button class="btn btn-primary rounded-circle" type="submit" name="supprimer"  onclick="return confirm('Voulez vous vraiment supprimer <?php echo $item->title ?> ???')">
+                                <button class="button rounded-circle" type="submit" name="supprimer" formaction="supprimer.php" onclick="return confirm('Voulez vous vraiment supprimer <?php echo $item->title ?> ???')">
                                     <i class="fa-solid fa-trash"></i>
                                 </button>
 
