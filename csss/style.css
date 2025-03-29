@@ -1,0 +1,13 @@
+.required{
+    color: red;
+}
+.btn-primary {
+    color: darkgrey;
+    background-color: transparent;
+    border: solid white;
+}
+
+.text-light a {
+    color: inherit;
+    text-decoration: none;
+}
